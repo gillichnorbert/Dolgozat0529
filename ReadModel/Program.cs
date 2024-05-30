@@ -11,7 +11,7 @@ var _context = new Context();
 
 if (!_context.Emberek.Any())
 {
-    var sorok = File.ReadAllLines(@"c:\adat\7.csv").Skip(1);
+    var sorok = File.ReadAllLines(@"c:\adat\7.csv");
     foreach (var a in sorok)
     {
         _context.Emberek.Add(new Ember(a));

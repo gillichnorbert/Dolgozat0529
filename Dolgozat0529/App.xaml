@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Dolgozat0529"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="/Theme/MenuButtonTheme.xaml"/>
     </Application.Resources>
 </Application>

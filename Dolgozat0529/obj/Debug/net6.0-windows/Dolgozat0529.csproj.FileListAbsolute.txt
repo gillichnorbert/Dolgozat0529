@@ -1,0 +1,10 @@
+C:\Users\Diak\Desktop\Dolgozat0529\Dolgozat0529\obj\Debug\net6.0-windows\Dolgozat0529.csproj.AssemblyReference.cache
+C:\Users\Diak\Desktop\Dolgozat0529\Dolgozat0529\obj\Debug\net6.0-windows\Task2Control.baml
+C:\Users\Diak\Desktop\Dolgozat0529\Dolgozat0529\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Diak\Desktop\Dolgozat0529\Dolgozat0529\obj\Debug\net6.0-windows\Task1Control.g.cs
+C:\Users\Diak\Desktop\Dolgozat0529\Dolgozat0529\obj\Debug\net6.0-windows\Task2Control.g.cs
+C:\Users\Diak\Desktop\Dolgozat0529\Dolgozat0529\obj\Debug\net6.0-windows\Task3Control.g.cs
+C:\Users\Diak\Desktop\Dolgozat0529\Dolgozat0529\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Diak\Desktop\Dolgozat0529\Dolgozat0529\obj\Debug\net6.0-windows\Dolgozat0529_MarkupCompile.cache
+C:\Users\Diak\Desktop\Dolgozat0529\Dolgozat0529\obj\Debug\net6.0-windows\Dolgozat0529_MarkupCompile.lref
+C:\Users\Diak\Desktop\Dolgozat0529\Dolgozat0529\obj\Debug\net6.0-windows\Theme\MenuButtonTheme.baml
