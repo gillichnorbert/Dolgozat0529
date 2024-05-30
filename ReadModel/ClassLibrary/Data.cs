@@ -6,21 +6,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary.Data;
-
-public class Context : DbContext
+namespace ClassLibrary.Data
 {
-    public DbSet<Ember> Emberek { get; set; }
-
-    public Context()
+    public class Context : DbContext
     {
+        public DbSet<Person> People { get; set; }
+
+        public Context()
+        {
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=PeopleDb;Trusted_Connection=True;");
+        }
+
+
+
     }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Embereks;Trusted_Connection=True;");
-    }
-
-
-
 }

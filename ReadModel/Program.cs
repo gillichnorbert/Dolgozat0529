@@ -2,24 +2,22 @@
 using ClassLibrary.Data;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 var _context = new Context();
 
-if (!_context.Emberek.Any())
+if (!_context.People.Any())
 {
-    var sorok = File.ReadAllLines(@"c:\adat\7.csv").Skip(1);
-    foreach (var a in sorok)
+    var lines = File.ReadAllLines(@"c:\adat\7.csv").Skip(1);
+    foreach (var line in lines)
     {
-        _context.Emberek.Add(new Ember(a));
+        _context.People.Add(new Person(line));
     }
-_context.SaveChanges();
+    _context.SaveChanges();
 }
 
-foreach (var item in _context.Emberek)
+foreach (var person in _context.People)
 {
-    Console.WriteLine(item);
+    Console.WriteLine(person);
 }

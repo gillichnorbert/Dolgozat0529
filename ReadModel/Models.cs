@@ -1,37 +1,103 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+
 namespace Models
 {
-    public class Ember
+    public class Person : INotifyPropertyChanged
     {
-        public int Id { get; set; }
-        public string Nev { get; set; }
-        public int Kor { get; set; }
-        public string Varos { get; set; }
-        public string Munka { get; set; }
-        public string Erdeklodes { get; set; }
+        private int id;
+        public int Id
+        {
+            get { return id; }
+            set
+            {
+                id = value;
+                OnPropertyChanged();
+            }
+        }
 
-        public Ember() { }
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set
+            {
+                name = value;
+                OnPropertyChanged();
+            }
+        }
 
-        public Ember(string sor)
+        private int age;
+        public int Age
+        {
+            get { return age; }
+            set
+            {
+                age = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string city;
+        public string City
+        {
+            get { return city; }
+            set
+            {
+                city = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string job;
+        public string Job
+        {
+            get { return job; }
+            set
+            {
+                job = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string interest;
+        public string Interest
+        {
+            get { return interest; }
+            set
+            {
+                interest = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public Person() { }
+
+        public Person(string sor)
         {
             var a = sor.Split(",");
-            Nev = a[0];
-            Kor = Convert.ToInt32(a[1]);
-            Varos = a[2];
-            Munka = a[3];
-            Erdeklodes = a[4];
+            Name = a[0];
+            Age = Convert.ToInt32(a[1]);
+            City = a[2];
+            Job = a[3];
+            Interest = a[4];
         }
 
         public override string ToString()
         {
-            return $"{Nev} - {Kor} - {Varos} - {Munka} - {Erdeklodes}";
+            return $"{Name} - {Age} - {City} - {Job} - {Interest}";
         }
+
+        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

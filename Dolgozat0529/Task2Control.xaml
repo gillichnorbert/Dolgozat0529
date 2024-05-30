@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              Height="620" Width="1100">
-    <Grid Background="#CCE8D2">
+    <Grid Background="LightGreen">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -21,7 +21,7 @@
                    Text="Information 7" 
                    FontSize="24" 
                    FontWeight="Bold" 
-                   Foreground="#4CAF50" 
+                   Foreground="Black" 
                    HorizontalAlignment="Left"
                    Margin="450,10,0,20"/>
 

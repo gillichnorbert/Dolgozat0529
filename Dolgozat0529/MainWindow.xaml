@@ -22,10 +22,10 @@
             </Grid.ColumnDefinitions>
             <TextBlock Foreground="White" Text="SchoolPaper" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="20,30" FontSize="24" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
             <StackPanel Grid.Row="1">
-                <Button Foreground="White" Content="Task1" Padding="0,20,0,20" BorderThickness="0" VerticalAlignment="Center" Background="#22202F" Click="Task1Button_Click"/>
-                <Button Foreground="White" Content="Task2" Padding="0,20,0,20" BorderThickness="0" VerticalAlignment="Center" Background="#22202F" Click="Task2Button_Click"/>
-                <Button Foreground="White" Content="Task3" Padding="0,20,0,20" VerticalAlignment="Center" Background="#22202F" Click="Task3Button_Click" BorderThickness="0"/>
-                <Button Content="Close" Padding="0,20,0,20" BorderThickness="0" Background="#22202F" Foreground="White" Click="CloseButton_Click"/>
+                <RadioButton Content="Task1" Style="{StaticResource MenuButtonTheme}" VerticalAlignment="Center" Click="Task1Button_Click"/>
+                <RadioButton Content="Task2" Style="{StaticResource MenuButtonTheme}" VerticalAlignment="Center" Click="Task2Button_Click"/>
+                <RadioButton Content="Task3" Style="{StaticResource MenuButtonTheme}" VerticalAlignment="Center" Click="Task3Button_Click"/>
+                <RadioButton Content="Close" Style="{StaticResource MenuButtonTheme}" VerticalAlignment="Center" Click="CloseButton_Click"/>
             </StackPanel>
             <ContentControl Grid.Row="1" Grid.Column="1" Name="MainContentControl" Margin="30" />
         </Grid>
