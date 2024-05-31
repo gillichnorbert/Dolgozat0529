@@ -24,4 +24,15 @@ namespace ClassLibrary.Data
 
 
     }
+<<<<<<< HEAD
+=======
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Emberek;Trusted_Connection=True;");
+    }
+
+
+
+>>>>>>> e6701f1add6f21bd795b4b62f597a21112655e2c
 }

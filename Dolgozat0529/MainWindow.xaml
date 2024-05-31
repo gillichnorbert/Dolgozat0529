@@ -15,7 +15,7 @@
                 <RowDefinition Height="100"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
@@ -24,7 +24,11 @@
             <StackPanel Grid.Row="1">
                 <RadioButton Content="Task1" Style="{StaticResource MenuButtonTheme}" VerticalAlignment="Center" Click="Task1Button_Click"/>
                 <RadioButton Content="Task2" Style="{StaticResource MenuButtonTheme}" VerticalAlignment="Center" Click="Task2Button_Click"/>
+<<<<<<< HEAD
                 <RadioButton Content="Task3" Style="{StaticResource MenuButtonTheme}" VerticalAlignment="Center" Click="Task3Button_Click"/>
+=======
+                <RadioButton Content="Task3" Style="{StaticResource MenuButtonTheme}" VerticalAlignment="Center" Click="Task2Button_Click"/>
+>>>>>>> e6701f1add6f21bd795b4b62f597a21112655e2c
                 <RadioButton Content="Close" Style="{StaticResource MenuButtonTheme}" VerticalAlignment="Center" Click="CloseButton_Click"/>
             </StackPanel>
             <ContentControl Grid.Row="1" Grid.Column="1" Name="MainContentControl" Margin="30" />

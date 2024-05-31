@@ -4,10 +4,14 @@
              xmlns:local="clr-namespace:Dolgozat0529"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+<<<<<<< HEAD
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+=======
+        <ResourceDictionary Source="/Theme/MenuButtonTheme.xaml"/>
+>>>>>>> e6701f1add6f21bd795b4b62f597a21112655e2c
     </Application.Resources>
 </Application>
